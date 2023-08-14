@@ -4,27 +4,18 @@
 /**
  * main - printing random no and giving info abt its xter
  *
- * Description: check the character
+ * Description: Check the character
  * Return: always (0)
  */
 int main(void)
 {
 	int n;
+	int lastd;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	lastd = n % 10;
 
-	if (n > 0)
+	if (lastd > 5)
 	{
-		printf("%d is positive\n", n);
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else if (n < 0)
-	{
-		printf("%d is negative\n", n);
-	}
-	return (0);
-}
+		printf
