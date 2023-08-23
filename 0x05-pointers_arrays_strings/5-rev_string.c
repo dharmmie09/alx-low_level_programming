@@ -3,7 +3,7 @@
 /**
  * rev_string -reverse function
  * @s: is the string used by user
- * */
+ */
 
 void rev_string(char *s)
 {
