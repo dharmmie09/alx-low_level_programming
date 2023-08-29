@@ -7,8 +7,8 @@
  * @n: is the user input
  * Return: as specified
  */
- char *_memset(char *s, char b, unsigned int n)
- {
+char *_memset(char *s, char b, unsigned int n)
+{
 	 memset(s, b, n);
-	 return (s);
- }
+	return (s);
+}
