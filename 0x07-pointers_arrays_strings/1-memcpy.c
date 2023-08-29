@@ -1,11 +1,11 @@
 #include "main.h"
 #include <string.h>
 /**
- * _memcpy - funtion to copy
+ * _memcpy - is the funtion to copy
  * @dest: is the destination file
  * @src: is the source file
  * @n: is the user input value
- * Retun: as specified
+ * Return: as specified
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
