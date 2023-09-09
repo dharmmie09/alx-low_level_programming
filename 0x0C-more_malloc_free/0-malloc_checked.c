@@ -4,15 +4,14 @@
 /**
  * malloc_checked - is the function to check memory address
  * @b: is the integer argument used
- * Return: as 0 always
+ * Return: as specified
  */
 void *malloc_checked(unsigned int b)
 {
-	void *ptr = malloc(b)
+	void *ptr = malloc(b);
 
 	if (ptr == NULL)
 	{
-
 		exit(98);
 	}
 	return (ptr);
