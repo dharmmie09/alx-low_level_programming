@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "dog.h"2
+#include "dog.h"
 #include <stddef.h>
 /**
  * print_dog - is the print dog details function
