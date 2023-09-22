@@ -6,7 +6,7 @@
  *
  *  Return: as 0
  */
-void free_list(list_t *head_)
+void free_list(list_t *head)
 {
 	list_t *j, *i;
 	
