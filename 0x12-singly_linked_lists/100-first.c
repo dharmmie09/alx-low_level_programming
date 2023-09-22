@@ -2,8 +2,7 @@
 
 /**
  * bmain - attribute to  executed before main
- * attribute - is the character  
- 
+ * attribute - is the character
  */
 
 void __attribute__ ((constructor)) bmain()
