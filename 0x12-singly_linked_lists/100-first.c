@@ -5,7 +5,7 @@
  * constructor: is the gcc specific attribute
  * attribute: the main function before execution
  */
-void _attribute_((constructor)) premain()
+void __attribute__((constructor)) premain()
 {
 	printf("You're beat! and yet, you must allow");
 	printf(",\nI bore my house upon my back!\n");
