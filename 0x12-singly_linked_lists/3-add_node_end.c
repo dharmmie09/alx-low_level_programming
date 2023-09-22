@@ -22,7 +22,7 @@ list_t *add_node_end(list_t **head, const char *str)
 			free(i);
 			return (NULL);
 		}
-		i->strlen(i->str);
+		i->len = strlen(i->str);
 	}
 	if (j)
 	{
