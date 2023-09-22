@@ -1,14 +1,13 @@
-#include "list.h"
-
-void _construction(void) _attribute_((constructor));
+#include <stdio.h>
 
 /**
- * _constructor -excutes before the main()
- *
- * Return: void
+ * bmain - attribute to  executed before main
+ * attribute - is the character  
+ 
  */
-void _constructor(void)
+
+void __attribute__ ((constructor)) bmain()
 {
-	printf("You're beat! and yet, you must allow,\n"
-		"I bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow");
+	printf(",\nI bore my house upon my back!\n");
 }
