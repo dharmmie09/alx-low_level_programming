@@ -1,4 +1,6 @@
+#include <stdlib.h>
 #include "lists.h"
+#include <string.h>
 
 /**
  * add_node_end - is the list that adds end to a node
