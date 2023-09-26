@@ -6,7 +6,7 @@
  * @n: integer to be include the new node
  * Return: as 0
  */
-listint_t *add_nodeint(listint_t **head,cost int n)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *j;
 
@@ -15,8 +15,8 @@ listint_t *add_nodeint(listint_t **head,cost int n)
 	if (j == NULL)
 
 	j->n = n;
-	
-	j->nsxt = *head;
+
+	j->next = *head;
 
 	*head = j;
 
