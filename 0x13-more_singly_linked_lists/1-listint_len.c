@@ -8,7 +8,7 @@
 size_t listint_len(const listint_t *h)
 {
 	const listint_t *j;
-	size_t i -0;
+	size_t i = 0;
 	
 
 	j = h;
@@ -16,7 +16,7 @@ size_t listint_len(const listint_t *h)
 
 	while (j != NULL)
 	{
-		j = j->next
+		j = j->next;
 		i++;
 	}
 	return (i);
