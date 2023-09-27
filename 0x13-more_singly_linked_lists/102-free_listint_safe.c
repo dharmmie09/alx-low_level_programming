@@ -1,41 +1,27 @@
-ii#include "lists.h"
+#include "lists.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
- * free_listint_safe - a listint list is free,even if it has a loop
+ * find_listint_loop_fl - a loop is found in linked list
  *
- * @head: head of list
+ * @head: linked list to search
  *
  * Return: as 0
  */
-size_t free_listint_safe(listint_t **h)
+listint_t *find_listint_loop_fl(listint_t *head)
 {
-	size_t len = 0;
-	listint_t *i;
+	listint_t *ptr, *end;
 
-	if (h == NULL || *h == NULL)
-		return (0);
+	if (head == NULL)
+		return (NULL);
 
-	while (*h != NULL)
+	for (end = head->next; end != NULL; end = end->next)
 	{
-		len++;
-		if ((void *)*h > (void *)(*h)->next && (*h)->next != NULL)
-		{
-			i = (*h)->next;
-			free(*h);
-			*h = i;
-			len++;
-		}
-		else
-		{
-			i = (*h)->next;
-			free(*h);
-			*h = i;
-		}
+		if (end == end->next)
+			return (end);
+		for (ptr = head; ptr != end; ptr = ptr->next)
+			if (ptr == end->next)
+				return (end->next);
 	}
-
-	*h = NULL;
-
-	return (len);
+	return (NULL);
 }
