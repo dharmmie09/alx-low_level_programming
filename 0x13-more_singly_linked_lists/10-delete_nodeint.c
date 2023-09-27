@@ -7,7 +7,7 @@
  *
  * Return: as 0
  */
-int delete_nodeint_at_index(listint_t **head, unsigned int index
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *node, *prev_node;
 	unsigned int j = 0;
@@ -32,8 +32,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index
 			prev_node->next = node->next;
 			free(node);
 			return (0);
-		)
-		!++;
+		}
+		j++;
 		prev_node = node;
 		node = node->next;
 	}
