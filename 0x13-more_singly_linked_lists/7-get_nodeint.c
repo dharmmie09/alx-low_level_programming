@@ -5,7 +5,7 @@
  * @index: index of the code tart sat 0
  * Return: as 0
  */
-listint_t *get_nodeint_at_indes(listint_t *head, unsigned int index)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int j;
 
